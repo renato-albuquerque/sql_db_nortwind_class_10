@@ -41,10 +41,10 @@ select * from public.us_estados limit 5;
 <br>
 
 ## Tabelas (4) SCHEMA data_warehouse (Simulando um data_warehouse)
-dim_tempo (Tabela dimensão)
-dim_produto (Tabela dimensão)
-dim_regiao (Tabela dimensão)
-fato_vendas (Tabela fato) 
+dim_tempo (Tabela dimensão) <br>
+dim_produto (Tabela dimensão) <br>
+dim_regiao (Tabela dimensão) <br>
+fato_vendas (Tabela fato) <br>
 Obs.: Modelagem e criação das tabelas/colunas do data_warehouse vieram desenvolvidas neste projeto.
 
 <br>
