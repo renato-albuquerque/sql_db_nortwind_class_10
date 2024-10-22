@@ -16,7 +16,7 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 - Fazer "Restore" do banco de dados (Interface gráfica). <br>
 ![screenshot](/images/restore.png) <br>
 
-## Tabelas (12) SCHEMA public (Simulando um bd produção)
+## Tabelas (12) SCHEMA public `(Simulando um bd produção)`
 - Comandos SQL: <br>
 ```
 select * from public.categorias limit 5;
@@ -34,7 +34,7 @@ select * from public.us_estados limit 5;
 ```
 <br>
 
-## Tabelas (4) SCHEMA data_warehouse (Simulando um data_warehouse)
+## Tabelas (4) SCHEMA data_warehouse `(Simulando um data_warehouse)`
 dim_tempo (Tabela dimensão) <br>
 dim_produto (Tabela dimensão) <br>
 dim_regiao (Tabela dimensão) <br>
@@ -43,9 +43,9 @@ Obs.: Modelagem e criação das tabelas/colunas do data_warehouse vieram desenvo
 
 <br>
 
-## Inserir valores (insert into) nas tabelas do data_warehouse
+## Inserir valores (insert into) nas tabelas do data_warehouse `(Dimensão e Fato)`
 
-### 1ª Carregar tabela dimensão dim_tempo. Comandos SQL: <br>
+### 1ª Carregar tabela dimensão `dim_tempo`. Comandos SQL: <br>
 ```
 INSERT INTO data_warehouse.dim_tempo(data, ano, mes, dia, dia_da_semana, mes_extenso)
 SELECT 
@@ -70,7 +70,7 @@ limit 5;
 
 ![screenshot](/images/dim_tempo.png) <br>
 
-### Carregar tabela dimensão dim_produto. Comandos SQL: <br>
+### Carregar tabela dimensão `dim_produto`. Comandos SQL: <br>
 ```
 INSERT INTO data_warehouse.dim_produto (nome, categoria)
 SELECT DISTINCT  
@@ -88,7 +88,7 @@ limit 5;
 
 ![screenshot](/images/dim_produto.png) <br>
 
-### Carregar tabela dimensão dim_regiao. Comandos SQL: <br>
+### Carregar tabela dimensão `dim_regiao`. Comandos SQL: <br>
 ```
 INSERT INTO data_warehouse.dim_regiao (pais, cidade, regiao)
 SELECT DISTINCT 
@@ -106,7 +106,7 @@ limit 5;
 
 ![screenshot](/images/dim_regiao.png) <br>
 
-### Carregar tabela FATO fato_vendas. Comandos SQL: <br>
+### Carregar tabela FATO `fato_vendas`. Comandos SQL: <br>
 ```
 INSERT INTO data_warehouse.fato_vendas(id_tempo,id_produto,id_regiao, quantidade, venda)
 SELECT
