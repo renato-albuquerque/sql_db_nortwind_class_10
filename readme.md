@@ -9,8 +9,6 @@ Instrutora: [Nayara Wakweski](https://github.com/NayaraWakewski) <br>
 
 ## Etapas de Desenvolvimento
 
-<br>
-
 ## Restore do Banco de Dados
 - Criar banco de dados: nortwind (Interface gráfica). <br>
 ![screenshot](/images/create_database.png) <br>
@@ -132,8 +130,6 @@ limit 10;
 - Visualização: <br>
 
 ![screenshot](/images/fato_vendas.png) <br>
-
-<br>
 
 ## Meus Contatos
 
